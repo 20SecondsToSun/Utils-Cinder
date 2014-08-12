@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{320D1851-99BA-42FC-8AEE-285560FFA47D}</ProjectGuid>
+    <RootNamespace>SocialNetwork</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\include;..\..\..\..\\include;..\..\..\..\\boost;..\blocks\Awesomium\include;..\blocks\Cinder-Curl\src;..\src\socialForm;..\src\social;..\src\utils;..\src\social\twitter;..\src\gui</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder_d.lib;%(AdditionalDependencies);..\blocks\Awesomium\build\lib\msw\awesomium.lib;..\blocks\Cinder-Curl\lib\msw\libcurl.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\..\..\..\\lib;..\..\..\..\\lib\msw;..\blocks\Cinder-Curl\lib\msw\</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <IgnoreSpecificDefaultLibraries>LIBCMT;LIBCPMT</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "..\blocks\Awesomium\build\bin\msw\avcodec-53.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\avformat-53.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\avutil-51.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_pak_utility.exe" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_process.exe" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_process.pdb" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_symbols.pdb" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\icudt.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\inspector.pak" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\libEGL.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\libGLESv2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>..\include;"..\..\..\..\\include";"..\..\..\..\\boost";..\blocks\Awesomium\include;..\blocks\Cinder-Curl\src\curl;..\blocks\Cinder-Curl\src</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOMINMAX;_WIN32_WINNT=0x0502;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>"..\..\..\..\\include";..\include</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>cinder.lib;%(AdditionalDependencies);..\blocks\Awesomium\build\lib\msw\awesomium.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>"..\..\..\..\\lib";"..\..\..\..\\lib\msw"</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding />
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /y "..\blocks\Awesomium\build\bin\msw\avcodec-53.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\avformat-53.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\avutil-51.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_pak_utility.exe" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_process.exe" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_process.pdb" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\awesomium_symbols.pdb" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\icudt.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\inspector.pak" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\libEGL.dll" "$(OutDir)"
+xcopy /y "..\blocks\Awesomium\build\bin\msw\libGLESv2.dll" "$(OutDir)"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\gui\Button.cpp" />
+    <ClCompile Include="..\src\gui\PreloaderCircle.cpp" />
+    <ClCompile Include="..\src\socialForm\SocialForm.cpp" />
+    <ClCompile Include="..\src\SocialNetworkApp.cpp" />
+    <ClCompile Include="..\blocks\Awesomium\src\CinderAwesomium.cpp" />
+    <ClCompile Include="..\blocks\Cinder-Curl\src\Curl.cpp" />
+    <ClCompile Include="..\blocks\Cinder-Curl\src\Ftp.cpp" />
+    <ClCompile Include="..\blocks\Cinder-Curl\src\FtpManager.cpp" />
+    <ClCompile Include="..\src\social\Facebook.cpp" />
+    <ClCompile Include="..\src\social\SocialShare.cpp" />
+    <ClCompile Include="..\src\social\Twitter.cpp" />
+    <ClCompile Include="..\src\social\twitter\base64.cpp" />
+    <ClCompile Include="..\src\social\twitter\HMAC_SHA1.cpp" />
+    <ClCompile Include="..\src\social\twitter\oauthlib.cpp" />
+    <ClCompile Include="..\src\social\twitter\SHA1.cpp" />
+    <ClCompile Include="..\src\social\twitter\twitcurl.cpp" />
+    <ClCompile Include="..\src\social\twitter\urlencode.cpp" />
+    <ClCompile Include="..\src\social\Vkontakte.cpp" />
+    <ClCompile Include="..\src\utils\Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h" />
+    <ClInclude Include="..\blocks\Awesomium\include\CinderAwesomium.h" />
+    <ClInclude Include="..\blocks\Cinder-Curl\src\Curl.h" />
+    <ClInclude Include="..\blocks\Cinder-Curl\src\Ftp.h" />
+    <ClInclude Include="..\blocks\Cinder-Curl\src\FtpManager.h" />
+    <ClInclude Include="..\src\gui\Button.h" />
+    <ClInclude Include="..\src\gui\PreloaderCircle.h" />
+    <ClInclude Include="..\src\socialForm\SocialForm.h" />
+    <ClInclude Include="..\src\social\Facebook.h" />
+    <ClInclude Include="..\src\social\SocialShare.h" />
+    <ClInclude Include="..\src\social\Twitter.h" />
+    <ClInclude Include="..\src\social\twitter\base64.h" />
+    <ClInclude Include="..\src\social\twitter\HMAC_SHA1.h" />
+    <ClInclude Include="..\src\social\twitter\oauthlib.h" />
+    <ClInclude Include="..\src\social\twitter\SHA1.h" />
+    <ClInclude Include="..\src\social\twitter\twitcurl.h" />
+    <ClInclude Include="..\src\social\twitter\twitcurlurls.h" />
+    <ClInclude Include="..\src\social\twitter\urlencode.h" />
+    <ClInclude Include="..\src\social\Vkontakte.h" />
+    <ClInclude Include="..\src\utils\TConvert.h" />
+    <ClInclude Include="..\src\utils\Utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

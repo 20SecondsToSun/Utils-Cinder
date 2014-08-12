@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Blocks">
+      <UniqueIdentifier>{0BEA706D-A1F0-4ED8-8AC8-899A5F79C4CF}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Awesomium">
+      <UniqueIdentifier>{EDD4686A-5263-4296-99A3-584D8F1AFCA2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Awesomium\include">
+      <UniqueIdentifier>{8C47FE1B-583A-4624-BB51-2E733AC5A48A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Awesomium\src">
+      <UniqueIdentifier>{D5828578-CF72-497F-B7B4-05E946DE63B9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-Curl">
+      <UniqueIdentifier>{D0AA0661-45BE-4BB3-B66B-BC5632F3ED69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Blocks\Cinder-Curl\src">
+      <UniqueIdentifier>{51F6C1D7-2492-4E01-A743-E15B7EF67CE8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\socialForm">
+      <UniqueIdentifier>{147e0f74-cec0-4512-9039-3ea0255736a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\social">
+      <UniqueIdentifier>{9119ec91-65c6-4753-880f-a8081b9d9c71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\social\twitter">
+      <UniqueIdentifier>{3d6f9604-6fa2-4ff4-b743-fba7311bf78b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\gui">
+      <UniqueIdentifier>{81735725-7656-46dc-9e59-fbd052aeb77e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{061d61d9-34ac-4d8c-8bb0-0eec5a0ce604}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\SocialNetworkApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\SocialNetworkApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Awesomium\include\CinderAwesomium.h">
+      <Filter>Blocks\Awesomium\include</Filter>
+    </ClInclude>
+    <ClCompile Include="..\blocks\Awesomium\src\CinderAwesomium.cpp">
+      <Filter>Blocks\Awesomium\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Cinder-Curl\src\Curl.cpp">
+      <Filter>Blocks\Cinder-Curl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Cinder-Curl\src\Ftp.cpp">
+      <Filter>Blocks\Cinder-Curl\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\blocks\Cinder-Curl\src\FtpManager.cpp">
+      <Filter>Blocks\Cinder-Curl\src</Filter>
+    </ClCompile>
+    <ClInclude Include="..\blocks\Cinder-Curl\src\Curl.h">
+      <Filter>Blocks\Cinder-Curl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Cinder-Curl\src\Ftp.h">
+      <Filter>Blocks\Cinder-Curl\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\blocks\Cinder-Curl\src\FtpManager.h">
+      <Filter>Blocks\Cinder-Curl\src</Filter>
+    </ClInclude>
+    <ClCompile Include="..\src\socialForm\SocialForm.cpp">
+      <Filter>Source Files\socialForm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\Facebook.cpp">
+      <Filter>Source Files\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\SocialShare.cpp">
+      <Filter>Source Files\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\Twitter.cpp">
+      <Filter>Source Files\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\Vkontakte.cpp">
+      <Filter>Source Files\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\twitter\base64.cpp">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\twitter\HMAC_SHA1.cpp">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\twitter\oauthlib.cpp">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\twitter\SHA1.cpp">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\twitter\twitcurl.cpp">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\social\twitter\urlencode.cpp">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\Button.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\gui\PreloaderCircle.cpp">
+      <Filter>Source Files\gui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\utils\Utils.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\Resources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\socialForm\SocialForm.h">
+      <Filter>Source Files\socialForm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\Facebook.h">
+      <Filter>Source Files\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\SocialShare.h">
+      <Filter>Source Files\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\Twitter.h">
+      <Filter>Source Files\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\Vkontakte.h">
+      <Filter>Source Files\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\base64.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\HMAC_SHA1.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\oauthlib.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\SHA1.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\twitcurl.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\twitcurlurls.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\social\twitter\urlencode.h">
+      <Filter>Source Files\social\twitter</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gui\Button.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\gui\PreloaderCircle.h">
+      <Filter>Source Files\gui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\TConvert.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\utils\Utils.h">
+      <Filter>Source Files\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Resources.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
